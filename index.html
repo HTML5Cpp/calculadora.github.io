@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta name="keywords" content=" ">
+    <meta name="description" content="Calculadora">
+    <meta name="author" content="Didier Saucedo">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./MEDIA/logo.png">
+
+    <title>Calculadora</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/inicio.css">
+    <link rel="stylesheet" href="./CSS/nav.css"> 
+    <link rel="stylesheet" href="./CSS/piePagina.css"> 
+    
+
+</head>
+<body>
+    <nav>
+        <a href="">Inicio</a>
+    </nav>
+
+    <main>
+        <section>
+            <div id="calculadora-top">
+                <div id="head-CT"></div>
+                <form name="calculadora" >
+                    <div id="container-CT">
+                        <input type="textfield" class="pantallas" value="" placeholder="0" name="result" autocomplete="off" readonly id="resultado">
+                        <input type="textfield" class="pantallas" value="" placeholder="-" name="op" autocomplete="off" readonly id="operaciones">
+                    </div>
+                
+            </div>
+
+            <div id="btn-calculadora">
+                <input type="reset" class="button-numero cal" value="C" onclick="document.calculadora.op.value+='7'">
+                <input type="button" class="button-numero cal" value="+/-">
+                <input type="button" class="button-numero cal" value="%" onclick="document.calculadora.op.value+='%'">
+                <input type="button" class="button-resaltado cal" value="/" onclick="document.calculadora.op.value+='/'" id="res-1">
+
+                <input type="button" class="button-numero cal" value="7" onclick="document.calculadora.op.value+='7'">
+                <input type="button" class="button-numero cal" value="8" onclick="document.calculadora.op.value+='8'">
+                <input type="button" class="button-numero cal" value="9" onclick="document.calculadora.op.value+='9'">
+                <input type="button" class="button-resaltado cal" value="*" onclick="document.calculadora.op.value+='*'" id="res-2">
+                   
+                <input type="button" class="button-numero cal" value="4" onclick="document.calculadora.op.value+='4'">
+                <input type="button" class="button-numero cal" value="5" onclick="document.calculadora.op.value+='5'">
+                <input type="button" class="button-numero cal" value="6" onclick="document.calculadora.op.value+='6'">
+                <input type="button" class="button-resaltado cal" value="-" onclick="document.calculadora.op.value+='-'" id="res-3">
+    
+                <input type="button" class="button-numero cal" value="1" onclick="document.calculadora.op.value+='1'">
+                <input type="button" class="button-numero cal" value="2" onclick="document.calculadora.op.value+='2'">
+                <input type="button" class="button-numero cal" value="3" onclick="document.calculadora.op.value+='3'">
+                <input type="button" class="button-resaltado cal" value="+" onclick="document.calculadora.op.value+='+'" id="res-4">
+
+                <input type="button" class="button-numero cal" value="0" onclick="document.calculadora.op.value+='0'" id="btn-0">
+                <input type="button" class="button-numero cal" value="." onclick="document.calculadora.op.value+='.'">
+                <input type="button" class="button-resaltado cal" value="=" onclick="document.calculadora.result.value=eval(document.calculadora.op.value)" id="res-5">
+            </div>
+
+            </form>
+                
+        </section>
+    </main>
+
+    <footer>
+
+
+    </footer>
+    <script src="JS/cal.js"></script>
+</body>
+</html>
